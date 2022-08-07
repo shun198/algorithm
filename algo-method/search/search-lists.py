@@ -42,19 +42,19 @@ print(cnt_to_right)
 N = int(input())
 A = list(map(int, input().split()))
 cnt = 0
-for i in range(N-1):
-    if A[i] < A[i+1]:
+for i in range(N - 1):
+    if A[i] < A[i + 1]:
         cnt += 1
 print(cnt)
 
 # 配列の全探索6
 N = int(input())
 A = list(map(int, input().split()))
-maxnum = A[0]
+max = A[0]
 for i in range(N):
-    if A[i] > maxnum:
-        maxnum = A[i]
-print(maxnum)
+    if A[i] > max:
+        max = A[i]
+print(max)
 
 # 配列の全探索7
 N = int(input())
@@ -72,10 +72,27 @@ N = int(input())
 A = list(map(int, input().split()))
 
 # 線形探索
-minnum = A[0]
+min = A[0]
 for x in A:
-    if x < minnum:
-        minnum = x
+    if x < min:
+        min = x
 
 # 答えを出力する
-print(minnum)
+print(min)
+
+# 配列の全探索9
+# データを受け取る
+N = int(input())
+A = list(map(int, input().split()))
+
+# 線形探索
+count = [0] * 9
+for x in A:
+    count[x - 1] += 1
+
+# 答えを出力する
+for x in count:
+    print(x)
+
+
+# 配列の全探索10
