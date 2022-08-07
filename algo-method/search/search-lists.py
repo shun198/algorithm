@@ -57,3 +57,25 @@ for i in range(N):
 print(maxnum)
 
 # 配列の全探索7
+N = int(input())
+A = list(map(int, input().split()))
+
+index = 0
+for i in range(N):
+    if A[i] > A[index]:
+        index = i
+print(index)
+
+# 配列の全探索8
+# データを受け取る
+N = int(input())
+A = list(map(int, input().split()))
+
+# 線形探索
+minnum = A[0]
+for x in A:
+    if x < minnum:
+        minnum = x
+
+# 答えを出力する
+print(minnum)
