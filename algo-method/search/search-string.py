@@ -53,3 +53,11 @@ for i in range(N):
     if S[i] != T[i]:
         count += 1
 print(count)
+
+# 全探索5
+S = input()
+T = input()
+if T in S:
+    print("Yes")
+else:
+    print("No")
