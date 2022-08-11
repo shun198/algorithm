@@ -15,3 +15,13 @@ if flag:
     print("Yes")
 else:
     print("No")
+
+# # 別解
+# S = input()
+# S_list = list(S)
+# S_rev_list = list(reversed(S_list))
+# S_rev = "".join(S_rev_list)
+# if S == S_rev:
+#     print("Yes")
+# else:
+#     print("No")
