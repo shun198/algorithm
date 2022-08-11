@@ -7,3 +7,15 @@ ans = ""  # 答え
 for item in A:  # A の各要素の頭文字をつなげる
     ans += item[0]
 print(ans)
+
+# 別解
+# N = int(input())
+# S = [""] * N
+# for i in range(N):
+#     S[i] = input()
+# text = ""
+# cap = ""
+# for i in range(N):
+#     text = S[i]
+#     cap += text[0:1]
+# print(cap)

@@ -1,17 +1,18 @@
 # 標準出力3-10
 N = int(input())
-A = [""] * N
-left_cnt = 0
-right_cnt = 0
+S = [""] * N
 for i in range(N):
-    A[i] = input()
-    if A[i] == "left":
-        left_cnt += 1
-    elif A[i] == "right":
-        right_cnt += 1
-if left_cnt > right_cnt:
+    S[i] = input()
+left = 0
+right = 0
+for items in S:
+    if items == "left":
+        left += 1
+    else:
+        right += 1
+if left > right:
     print("left")
-elif left_cnt < right_cnt:
+elif left < right:
     print("right")
 else:
     print("same")
