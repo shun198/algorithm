@@ -19,19 +19,3 @@ for x in A:
 
 # 答えを出力する
 print(counter)
-
-# N = int(input())
-# A = list(map(int, input().split()))
-# cnt = 0
-# for items in A:
-#     if items == 1:
-#         continue
-#     elif items == 2:
-#         cnt += 1
-#     elif items == 3:
-#         cnt += 1
-#     else:
-#         for i in range(2, items-1):
-#             if items % i != 0:
-#                 cnt += 1
-# print(cnt)
