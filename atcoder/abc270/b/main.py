@@ -2,7 +2,7 @@
 # Xがゴール
 # Yに壁
 # Zにハンマー
-X,Y,Z = map(int,input().split())
+X, Y, Z = map(int, input().split())
 # Yが0より低く、0からゴールまでに壁がないとき
 if X > 0 and Y < 0:
     print(X)
@@ -12,7 +12,7 @@ elif X > 0 and X > Y:
         if Z > 0:
             print(X)
         elif Z < 0:
-            print(abs(Z)*2+X)
+            print(abs(Z) * 2 + X)
     else:
         print(-1)
 elif X > 0 and X < Y:
@@ -25,7 +25,7 @@ elif X < 0 and X < Y:
         if Z < 0:
             print(abs(X))
         elif Z > 0:
-            print(abs(Z)*2+abs(X))
+            print(abs(Z) * 2 + abs(X))
     else:
         print(-1)
 elif X < 0 and X > Y:

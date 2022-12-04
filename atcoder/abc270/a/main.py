@@ -1,6 +1,6 @@
 # コードを記載
-A, B = map(int,input().split())
-ans_list = [4,2,1]
+A, B = map(int, input().split())
+ans_list = [4, 2, 1]
 sunuke_list = []
 for ans in ans_list:
     if A - ans >= 0 or B - ans >= 0:

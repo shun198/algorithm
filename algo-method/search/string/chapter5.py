@@ -9,8 +9,8 @@ M = len(T)
 
 # 線形探索 (0 から N-M まで)
 flag = False
-for i in range(N-M+1):
-    if S[i:i+M] == T:
+for i in range(N - M + 1):
+    if S[i : i + M] == T:
         flag = True
 
 # 答えを出力する

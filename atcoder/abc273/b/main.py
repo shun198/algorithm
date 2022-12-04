@@ -11,9 +11,9 @@ _INPUT = """\
 """
 sys.stdin = io.StringIO(_INPUT)
 
-X,K = map(int, input().split())
+X, K = map(int, input().split())
 
 for i in range(K):
-    if (X % pow(10,i+1)) >= 5:
+    if (X % pow(10, i + 1)) >= 5:
         print(X)
 print(X)
