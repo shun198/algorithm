@@ -12,7 +12,7 @@ for i in range(10):
 for items in dots:
     if len(items.strip(".")) == 0:
         if A != 0:
-            B = cnt -1
+            B = cnt - 1
             break
         cnt += 1
         continue
@@ -24,8 +24,6 @@ for items in dots:
         cnt += 1
 if B == 0:
     B = 10
-        
-print(A,B)
-print(C,D)
-    
-        
+
+print(A, B)
+print(C, D)

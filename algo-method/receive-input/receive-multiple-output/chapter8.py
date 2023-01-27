@@ -2,4 +2,4 @@
 S = input()
 T = input()
 U = input()
-print(U+T+S)
+print(U + T + S)
